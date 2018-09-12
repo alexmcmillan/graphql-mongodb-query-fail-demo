@@ -61,3 +61,8 @@ If I then:
 - `npm i graphql@0.13.2`
 
 and repeat, it works fine.
+
+
+# RESOLVED
+
+This was a caused by [a change](https://github.com/graphql/graphql-js/pull/1382) to the graphql package introduced recently, and there is [a PR](https://github.com/graphql/graphql-js/pull/1520) awaiting merge which resolves it.
