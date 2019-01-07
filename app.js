@@ -8,6 +8,8 @@ const {
   GraphQLNonNull
 } = require('graphql');
 
+mongoose.ObjectId.get(v => v == null ? v : v.toString());
+
 // Mongoose model
 const Thing = mongoose.model('Thing', new mongoose.Schema({
   id: mongoose.Schema.Types.ObjectId,
